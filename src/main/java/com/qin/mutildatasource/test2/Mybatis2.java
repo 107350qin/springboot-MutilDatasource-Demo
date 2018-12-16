@@ -17,7 +17,7 @@ public class Mybatis2 {
     @Autowired
     MybatisService2 service2;
 
-    @Transactional(value = "test2TransactionManager")
+    @Transactional(transactionManager = "test2TransactionManager")
     @RequestMapping("add2")
     public String addUser(int age, String name) {
         System.out.println("hell");

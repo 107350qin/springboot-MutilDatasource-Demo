@@ -9,10 +9,6 @@ import lombok.Data;
  */
 @Data
 public class User {
-    private int age;
-    private String name;
-
-    public static void main(String[] args) {
-        System.out.println(new User().toString());
-    }
+    private int age=10;
+    private String name="qinmeng";
 }
